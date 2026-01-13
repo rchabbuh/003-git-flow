@@ -10,62 +10,52 @@
 Cenário: Você criou uma pasta no seu computador, escreveu códigos e agora decidiu que isso precisa ir para o GitHub. O repositório remoto ainda não existe.
 
 ### Passo 1: Preparar o Terreno Local (No seu PC)
-Navegue até a pasta pelo bash.  
-Inicie o Git, (Cria a pasta oculta .git)  
+1.1 Navegue até a pasta pelo bash.  
+1.2 Inicie o Git, (Cria a pasta oculta .git)  
 ```python
 git init
 ```
-
-Renomeie a branch principal (Padrão Moderno): O Git antigo chama a branch principal de master. O GitHub e o mercado usam main. Vamos padronizar agora para evitar problemas futuros:  
+1.3 Renomeie a branch principal (Padrão Moderno): O Git antigo chama a branch principal de master. O GitHub e o mercado usam main. Vamos padronizar agora para evitar problemas futuros:  
 ```python
 git branch -M main
 ```
-
-Adicione seus arquivos à "Caixa de Envio" (Staging):
+1.4 Adicione seus arquivos à "Caixa de Envio" (Staging):
 ```python
 git add .
 ```
-
-Feche o pacote (Commit):
+1.5 Feche o pacote (Commit):
 ```python
 git commit -m "Primeiro commit: Estrutura inicial do projeto"
 ```
-
-Neste momento, seu código está salvo e versionado, mas apenas no seu computador.
+1.6 Neste momento, seu código está salvo e versionado, mas apenas no seu computador.
 Você pode parar por ai e versionar apenas na sua máquina se preferir.
 
 ### Passo 2: Criar a "Garagem" na Nuvem (No Site do GitHub)
 
-Agora precisamos criar o destino. Vá no site github.com e faça login.
+2.1 Agora precisamos criar o destino. Vá no site github.com e faça login.  
+2.2 Clique no botão New (ou no sinal de + no canto superior direito -> New repository).  
+2.3 Dê um nome ao repositório (ex: meu-projeto-estudos). Ideal que seja igual a pasta para sua identificação rapida
 
-Clique no botão New (ou no sinal de + no canto superior direito -> New repository).
+IMPORTANTE: Deixe as opções "Add a README file", ".gitignore" e "License" DESMARCADAS. Por que? Se você marcar isso, o GitHub cria um histórico lá. Como você já tem um histórico no seu PC, tentar juntar os dois agora daria conflito. Queremos o repositório vazio.  
 
-Dê um nome ao repositório (ex: meu-projeto-estudos). Ideal que seja igual a pasta para sua identificação rapida
-
-IMPORTANTE: Deixe as opções "Add a README file", ".gitignore" e "License" DESMARCADAS. Por que? Se você marcar isso, o GitHub cria um histórico lá. Como você já tem um histórico no seu PC, tentar juntar os dois agora daria conflito. Queremos o repositório vazio.
-
-Clique em Create repository, e seu repositório estará criado!
+2.4 Clique em Create repository, e seu repositório estará criado!
 
 ### Passo 3: Conectar e Enviar (O Link)
 
-O GitHub vai te mostrar uma tela cheia de códigos.
+3.1 O GitHub vai te mostrar uma tela cheia de códigos. Procure a seção "…or push an existing repository from the command line".
 
-Procure a seção "…or push an existing repository from the command line".
-
-Crie a ponte (Remote): Copie e cole o comando que o GitHub te deu (parecido com este):
+3.2 Crie a ponte (Remote): Copie e cole o comando que o GitHub te deu (parecido com este substituindo SEU-USUARIO e NOME-DO-REPO):
 ```Python
 git remote add origin https://github.com/SEU-USUARIO/NOME-DO-REPO.git
 ```
 Explicação: Você está dizendo ao Git local: "Adicione um endereço remoto chamado 'origin' que aponta para essa URL".  
 
-Envie os arquivos (Push):
+3.3 Envie os arquivos (Push):
 ```python
 git push -u origin main
 ```
 
-O -u cria um vínculo permanente. Da próxima vez, basta digitar git push.
-
-Pode ser que o Git peça seu usuário e senha (ou token) nesta etapa.
+O -u cria um vínculo permanente. Da próxima vez, basta digitar git push. Pode ser que o Git peça seu usuário e senha (ou token) nesta etapa.
 
 
 
