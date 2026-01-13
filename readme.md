@@ -5,11 +5,12 @@
 
 ⚙️ EN - The complete process so that we can understand how GIT and GIThub work together as a team.
 
-## Fluxo 1: O Caminho "Do Zero Local para a Nuvem"
+
+## 🔹Fluxo 1: O Caminho "Do Zero Local para a Nuvem"🔹
 
 Cenário: Você criou uma pasta no seu computador, escreveu códigos e agora decidiu que isso precisa ir para o GitHub e o repositório remoto ainda não existe.
 
-### Passo 1: Preparar o Terreno Local (No seu PC)
+### ⚡Passo 1: Preparar o Terreno Local (No seu PC)
 1.1 Navegue até a pasta pelo bash.  
 
 
@@ -36,7 +37,7 @@ git commit -m "Primeiro commit: Estrutura inicial do projeto"
 1.6 Neste momento, seu código está salvo e versionado, mas apenas no seu computador.  
 Você pode parar por ai e versionar apenas na sua máquina se preferir.
 
-### Passo 2: Criar a "Garagem" na Nuvem (No Site do GitHub)
+### ⚡Passo 2: Criar a "Garagem" na Nuvem (No Site do GitHub)
 
 2.1 Agora precisamos criar o destino. Vá no site github.com e faça login.  
 
@@ -48,7 +49,7 @@ IMPORTANTE: Deixe as opções "Add a README file", ".gitignore" e "License" DESM
 
 2.4 Clique em Create repository, e seu repositório estará criado!
 
-### Passo 3: Conectar e Enviar (O Link)
+### ⚡Passo 3: Conectar e Enviar (O Link)
 
 3.1 O GitHub vai te mostrar uma tela cheia de códigos. Procure a seção "…or push an existing repository from the command line".
 
@@ -65,11 +66,11 @@ git push -u origin main
 
 O -u cria um vínculo permanente. Da próxima vez, basta digitar git push. Pode ser que o Git peça seu usuário e senha (ou token) nesta etapa.
 
-## Fluxo 2: O Caminho "Da Nuvem para o Local" (Clonar)
+## 🔹Fluxo 2: O Caminho "Da Nuvem para o Local" (Clonar)🔹
 
 Cenário: O projeto já existe no GitHub (pode ser um projeto open source ou um repositório que você criou em outro computador) e você quer trazê-lo para sua máquina para trabalhar.
 
-### Passo 1: Trazer o Projeto (Download Inteligente)
+### ⚡Passo 1: Trazer o Projeto (Download Inteligente)
 
 1.1 Abra o terminal na pasta onde você quer que o projeto seja salvo (ex: cd Desktop).
 
@@ -84,14 +85,14 @@ git clone https://github.com/USUARIO/NOME-DO-REPO.git
 
 O Git vai criar uma pasta com o nome do repositório e baixar tudo dentro dela. A conexão remota (origin) já vem configurada automaticamente!
 
-### Passo 2: Entrar no Escritório (Crucial!)
+### ⚡Passo 2: Entrar no Escritório (Crucial!)
 2.1 Entre na pasta que acabou de ser criada: Muitos iniciantes esquecem este passo e dão comandos na pasta errada.
 
 ```python
 cd nome-do-repo
 ```
 
-### Passo 3: O Ciclo de Trabalho (Editar e Enviar)
+### ⚡Passo 3: O Ciclo de Trabalho (Editar e Enviar)
 
 Agora que está conectado, o fluxo é cíclico. Trabalhe: Crie arquivos, edite códigos no VS Code.
 
@@ -116,9 +117,9 @@ git push
 git pull
 ```
 
-## Fluxo 3 - Melhor prática de projetos novos e estrutura do inicio
+## 🔹Fluxo 3 - Melhor prática de projetos novos e estrutura do inicio🔹
 
-### Passo 1: Criar o destino.
+### ⚡Passo 1: Criar o destino.
 
 1.1 Vá no site github.com e faça login.
 
@@ -133,7 +134,7 @@ Por que? Se você marcar isso, o GitHub cria um histórico lá. Como você já t
 
 Quando você cria o repositório diretamente no GitHub, ele já vem com: ✔ estrutura limpa / ✔ branch main criada / ✔ repositório remoto configurado / ✔ painel de commits e configurações prontos. Isso evita erros comuns como: origin errado / conflitos com main / ter que configurar remoto na mão / repositório local divergente do remoto
 
-### Passo 2: Conectar com o reposotório local
+### ⚡Passo 2: Conectar com o reposotório local
 
 2.1 Navegue pelo bash até o repositório que você ira criar tudo e confira o local
 
@@ -156,7 +157,7 @@ O Git automaticamente:
 ✔ Já coloca você na branch main  
 ✔ Já conecta sua máquina com o GitHub corretamente  
 
-### Passo 3: preparar o terreno para iniciar o desenvolvimento
+### ⚡Passo 3: preparar o terreno para iniciar o desenvolvimento
 
 3.1 Entrar na pasta clonada
 ```python
@@ -169,7 +170,7 @@ cd meu-projeto
 git checkout -b dev
 ```
 
-### Passo 4: O Ciclo de Trabalho (Editar e Enviar)
+### ⚡Passo 4: O Ciclo de Trabalho (Editar e Enviar)
 
 Agora que está conectado, o fluxo é cíclico. Trabalhe: Crie arquivos, edite códigos no VS Code.
 
@@ -194,6 +195,5 @@ git push
 git pull
 ```
 
-
-
-
+Obrigado!
+Thank you!
